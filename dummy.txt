@@ -1,0 +1,24 @@
+Domain0 in Xen runs all the device drivers for the host machine hardware
+Hardware virtualization extensions do NOT offer binary translation acceleration
+TinyOS does NOT support updating part of the code at runtime
+Grant regions in Tock OS do NOT store kernel states
+
+Short QnA--
+Here is pseudocode of a simple spinlock implementation using test-and-set:
+This code achieves mutual exclusion, but what are the two potential problems of this lock implementation?
+Answer:
+No bounded waiting → starvation
+High cache coherence traffic due to frequent test-and-set on the same memory location
+
+Consider a hypothetical hard disk drive with 3000 RPM, 100MB/s of data transfer rate, and 10 ms of seek time. If the file system reads data from the disk in a block size of 2MB per access, the latency is [ ] ms and the throughput is [ ] MB/s.
+Latency: 0.04 seconds (or 40 ms)
+Throughput: 50 MB/s
+
+Consider a virtualization scenario where the hypervisor and the guest OS use 4-level paging. If nested/extended paging is used, what is the number of memory accesses required to translate a guest virtual address to a host physical address? Also, what is the number for shadow paging?
+Nested/Extended Paging: 21 memory accesses
+Shadow Paging: 5 memory accesses
+
+Why event-driven systems can be more memory efficient than multi-threaded systems?
+Event-driven systems use a single stack for scheduling tasks, as opposed to multi-threaded systems which require a separate stack per thread, thus using more memory.
+
+
