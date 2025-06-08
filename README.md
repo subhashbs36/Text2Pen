@@ -1,3 +1,14 @@
+---
+title: Text2Pen
+emoji: 🖊️
+colorFrom: indigo
+colorTo: blue
+sdk: gradio
+sdk_version: "4.25.0"
+app_file: main.py
+pinned: false
+---
+
 # ✍️ Text2Pen
 
 A modern, customizable tool to convert your typed text into realistic handwriting on A4 paper.  
