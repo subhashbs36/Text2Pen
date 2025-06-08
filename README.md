@@ -9,6 +9,8 @@ app_file: main.py
 pinned: false
 ---
 
+[![View Demo on Hugging Face Spaces](https://img.shields.io/badge/Live%20Demo-HuggingFace-blue?logo=huggingface)](https://huggingface.co/spaces/subhashbs36/Text2Pen)
+
 # ✍️ Text2Pen
 
 A modern, customizable tool to convert your typed text into realistic handwriting on A4 paper.  
