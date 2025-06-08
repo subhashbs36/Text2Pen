@@ -22,15 +22,19 @@ Supports multi-column layouts, handwriting font selection, background customizat
 
 ### Main UI
 
-![Main UI](sample_ui_1.png)
+![Main UI](assets/Ui.png)
 
 ### Customization Tab
 
-![Customization Tab](sample_ui_2.png)
+![Customization Tab](assets/Customization.png)
 
 ### Example Output
 
-![PDF Output Example](sample_output_page.png)
+![PDF Output Example](assets/generated_pdf.png)
+
+### Multi Column Layout
+
+![Multi Column Layout](assets/3_column.png)
 
 ---
 
@@ -113,7 +117,7 @@ Text2Pen/
 
 ## 📄 License
 
-MIT License
+Apache License 2.0
 
 ---
 
@@ -142,4 +146,4 @@ Pull requests and suggestions are welcome!
 
 ## 📧 Contact
 
-For questions or feedback, open an issue or contact [your-email@example.com](mailto:your-email@example.com).
+For questions or feedback, open an issue or contact [subhashbs36@gmail.com](mailto:subhashbs36@gmail.com).
