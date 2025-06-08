@@ -9,12 +9,30 @@ import tempfile
 
 A4_WIDTH, A4_HEIGHT = 2480, 3508  # A4 at 300dpi in pixels
 
-DEMO_TEXT = """This is a demo of the Text2Pen!
-- You can type or paste your own text here.
-- Or upload a .txt file.
-- Choose a handwriting font, font size, and more.
-- Try different columns and jitters for a natural look.
-Enjoy!"""
+DEMO_TEXT = """Domain0 in Xen runs all the device drivers for the host machine hardware
+Hardware virtualization extensions do NOT offer binary translation acceleration
+TinyOS does NOT support updating part of the code at runtime
+Grant regions in Tock OS do NOT store kernel states
+
+Short QnA--
+Here is pseudocode of a simple spinlock implementation using test-and-set:
+This code achieves mutual exclusion, but what are the two potential problems of this lock implementation?
+Answer:
+No bounded waiting → starvation
+High cache coherence traffic due to frequent test-and-set on the same memory location
+
+Consider a hypothetical hard disk drive with 3000 RPM, 100MB/s of data transfer rate, and 10 ms of seek time. If the file system reads data from the disk in a block size of 2MB per access, the latency is [ ] ms and the throughput is [ ] MB/s.
+Latency: 0.04 seconds (or 40 ms)
+Throughput: 50 MB/s
+
+Consider a virtualization scenario where the hypervisor and the guest OS use 4-level paging. If nested/extended paging is used, what is the number of memory accesses required to translate a guest virtual address to a host physical address? Also, what is the number for shadow paging?
+Nested/Extended Paging: 21 memory accesses
+Shadow Paging: 5 memory accesses
+
+Why event-driven systems can be more memory efficient than multi-threaded systems?
+Event-driven systems use a single stack for scheduling tasks, as opposed to multi-threaded systems which require a separate stack per thread, thus using more memory.
+
+"""
 
 # Optionally, provide some bundled fonts/backgrounds
 BUILTIN_FONTS = {
@@ -205,7 +223,7 @@ def gradio_ui():
             with gr.Row():
                 with gr.Column(scale=1):
                     gr.Markdown("### Advanced Options")
-                    fontsize = gr.Slider(24, 120, value=72, step=1, label="Font Size (pt)")
+                    fontsize = gr.Slider(24, 120, value=42, step=1, label="Font Size (pt)")
                     linespacing = gr.Slider(0, 50, value=10, step=1, label="Line Spacing (px)")
                     margin = gr.Slider(20, 200, value=70, step=1, label="Margin (px)")
                     jitter = gr.Slider(0, 10, value=0, step=1, label="Jitter (px, for natural look)")
