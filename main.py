@@ -205,7 +205,7 @@ def gradio_ui():
             with gr.Row():
                 with gr.Column(scale=1):
                     gr.Markdown("### Advanced Options")
-                    fontsize = gr.Slider(24, 120, value=48, step=1, label="Font Size (pt)")
+                    fontsize = gr.Slider(24, 120, value=72, step=1, label="Font Size (pt)")
                     linespacing = gr.Slider(0, 50, value=10, step=1, label="Line Spacing (px)")
                     margin = gr.Slider(20, 200, value=70, step=1, label="Margin (px)")
                     jitter = gr.Slider(0, 10, value=0, step=1, label="Jitter (px, for natural look)")
