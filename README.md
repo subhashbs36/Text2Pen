@@ -35,7 +35,7 @@ Supports multi-column layouts, handwriting font selection, background customizat
 
 ### Main UI
 
-![Main UI](assets/Ui.png)
+![Main UI](assets/Ui_new.png)
 
 ### Customization Tab
 
